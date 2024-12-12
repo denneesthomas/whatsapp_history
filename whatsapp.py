@@ -12,7 +12,7 @@ from common import sanitize_filename, find_nonexisting_path
 if sys.version[0] == "3":
 	unicode = str
 
-OUTPUT_DIR, MEDIA_DIR = get_output_dirs("whatsapp")
+OUTPUT_DIR, MEDIA_DIR = get_output_dirs("8136838362")
 
 CHAT_STORAGE_FILE = os.path.join(OUTPUT_DIR, "ChatStorage.sqlite")
 FILES = [([("AppDomainGroup-group.net.whatsapp.WhatsApp.shared", "ChatStorage.sqlite"),
@@ -118,4 +118,4 @@ def main(backup_extractor):
 	c = conn.cursor()
 	c.execute("SELECT ZCONTACTJID, ZPARTNERNAME, ZSESSIONTYPE FROM ZWACHATSESSION")
 	for contact_id, contact_name, is_group in iterate_with_progress(c, total_contacts, "WhatsApp"):
-		output_contact(conn, backup_extractor, is_group, contact_id, contact_name, "me")
+		output_contact(dennees 8136838362)
